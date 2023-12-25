@@ -1,0 +1,456 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 755.2px;
+}
+
+.background-all {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/image/3-duyet-doi-hinh-tau-hai-quan-ndvn-nhan-ky-niem-60-nam-ngay-thanh-lap-hai-quan-ndvn-52015-anh-tt-1588829388954.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#screen-for_pc {
+    margin: 20px auto;
+    margin-bottom: 0;
+    width: 431.25px;
+    height: auto;
+    background-color: #ccc;
+    /* display: none; */
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img-cover{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    filter: brightness(50%);
+}
+#develop-info{
+    margin:20px auto;
+    margin-bottom: 0;
+    width: 431.25px;
+    height: 678px;
+    display: none;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img-profile {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50%;
+    z-index: 1; /* Set a higher z-index to appear above img-cover */
+    
+}
+.img-profile img {
+    border-radius: 50%; /* Tạo hình tròn */
+    overflow: hidden; /* Che phủ phần ngoài khung hình */
+    width: 150px; /* Đảm bảo chiều rộng của ảnh là 100% */
+    height: 150px ;/* Đảm bảo chiều cao của ảnh là 100% */
+    object-fit: cover; /* Giữ nguyên tỉ lệ của ảnh */
+    border: 5px #ccc solid;
+}
+
+.name{
+    padding: 20px 0 0 0;
+    text-align: center;
+    width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 1;
+}
+
+.block-info_product{
+    margin-top: 185px;
+    border-radius: 10px;
+    background-color: #FFE4C4;
+    padding: 20px;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+#Main-screen {
+   
+    height: auto;
+    position: fixed;
+    background-color: bisque;
+    
+    z-index: 1000;
+}
+
+.Main-screen-header {}
+
+.header-item {
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+
+}
+
+.Main-screen-header h4{
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 10px auto;
+    font-size: 1.4rem;
+}
+
+.header-item_select {
+    position: absolute;
+    font-size: 20px;
+    left: 37px;
+    visibility: visible;
+}
+
+.header-item_select1 {
+    text-align: center;
+    position: fixed;
+    font-size: 20px;
+    left: 539px;
+    top: 52px;
+    z-index: 9999; /* Số này có thể được điều chỉnh tùy thuộc vào các lớp z-index khác trong ứng dụng của bạn */
+}
+
+
+.header-item_text {
+    position: absolute;
+    margin: 0 auto;
+}
+
+.header-item_select:nth-child(2) {
+    font-weight: 600px;
+}
+
+
+
+.cd {
+
+    display: flex;
+    width: 180px;
+    margin: 0 auto;
+    
+}
+
+
+
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    margin: auto;
+
+}
+
+.img_song img {
+    
+    
+}
+
+
+.control {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+.playing .control .btn-play .icon-play{
+    display: none;
+}
+
+.playing .control .btn-play .icon-pause{
+    display: block;
+    right: 16px;
+}
+
+.nonePlay .control .btn-play .icon-pause{
+    display: none;
+    right: 16px;
+}
+
+
+
+
+.btn {
+    font-size: 25px;
+    margin: 0 30px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.btn-pause-background {
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 50%;
+
+
+}
+
+
+.btn-pause-background .icon-play {
+    position: absolute;
+    top: 13px;
+    right: 14px;
+
+}
+
+.btn-pause-background .icon-pause {
+    position: absolute;
+    top: 13px;
+    right: 18px;
+
+}
+.btn.btn-repeat.active{
+    color: red;
+    
+}
+.btn.btn-repeat:hover{
+    cursor: pointer;
+}
+.btn.btn-prev:hover{
+    cursor: pointer;
+}
+.btn.btn-play:hover{
+    cursor: pointer;
+}
+.btn.btn-repeat:hover{
+    cursor: pointer;
+}
+.btn.btn-next:hover{
+    cursor: pointer;
+}
+.btn.btn-random:hover{
+    cursor: pointer;
+}
+
+.btn.btn-random.active{
+    color: red;
+    
+}
+
+.progress {
+    margin-left: 8px;
+
+    width: 96%;
+
+}
+.progress:hover {
+    cursor: pointer;
+
+}
+
+
+.playlist {
+    
+    overflow-y: auto;
+    margin: 0 auto;
+    width: 431.25px;
+    height: 260px;
+    background-color: #bcbcbc;
+    padding-top: 408px;
+    padding-bottom: 10px;
+    scrollbar-width: thin; /* For Firefox */
+}
+
+.playlist::-webkit-scrollbar {
+    width: 10px; /* Đặt chiều rộng của thanh cuộn */
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; /* Màu thanh cuộn */
+    border-radius: 5px; /* Độ cong viền thanh cuộn */
+}
+
+
+.volume {
+    position: absolute;
+    top: 71px;
+    right: -28px;
+    padding: 10px 10px 0 0;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+    
+
+
+.volume-max {
+    display: block;
+    transform: rotate(90deg);
+    opacity: 1; /* Set initial opacity to 0 */
+     /* Disable pointer events when not visible */
+    pointer-events: none;
+    }
+    .volume:hover{
+        cursor: pointer;
+    }
+.volume:hover  .volumeProgress{
+    opacity: 1;
+    
+}
+
+
+.volume:hover  .volume-min{
+    opacity: 1;
+}
+
+
+
+.volumeProgress {
+    opacity: 0;
+    
+    
+    width: 80px; /* Điều chỉnh chiều dài thanh trượt */
+    transform-origin: bottom; /* Đặt điểm xoay ở dưới */
+}
+
+.volume-min{
+    opacity: 0;
+    transform: rotate(90deg);
+}
+.playlist-more{
+    padding: 30px;
+}
+
+.song {
+    padding: 8px 0;
+    align-items: center;
+    width: 400px;
+    background-color: antiquewhite;
+    display: flex;
+    
+    border-radius: 7px;
+    margin: 15px auto;
+}
+.song.active {
+   background-color: rgb(227, 159, 71);
+}
+
+.song:active{
+    opacity: 0.5;
+    
+}
+.song:hover{
+    cursor: pointer;
+    width: 92%;
+}
+
+.song .song-name{
+   margin: 10px 0;
+}
+
+.playlist-img {
+    margin:0px 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.playlist-img img {
+    left: -47%;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 89px;
+    
+
+}
+
+.song-detail {
+    width: 250px;
+    flex: 1;
+    text-align: center;
+}
+
+.song-name {}
+
+.singger-detail {}
+
+
+
+
+.footer{
+    height: 30px;
+    
+    width: 431px;
+    display: flex;
+    
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.home-icon{
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 30px;
+    width: max-content;
+    flex: 1;
+    background-color: #4CAF50;
+
+}
+.home-icon:hover{
+    width: 96%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.home-profile:hover{
+    width: 96%;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+
+.home-profile{
+    text-align: center;
+    line-height: 30px;
+
+    font-size: 1.4rem;
+    width: max-content;
+    background-color: #14d71a;
+
+    flex: 1;
+    
+
+}

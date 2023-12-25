@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Player</title>
+    <link rel="stylesheet" href="assets/style/base_style.css">
+    <link rel="stylesheet" href="assets/style/main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+
+</head>
+
+<body>
+<div class="background-all" style="background-image: url(assets/image/3-duyet-doi-hinh-tau-hai-quan-ndvn-nhan-ky-niem-60-nam-ngay-thanh-lap-hai-quan-ndvn-52015-anh-tt-1588829388954.webp);">
+
+    <div id="develop-info" background>
+    
+        <img class="img-cover"
+            src="assets/image/su-30mk2-dropping-flares-as-a-part-of-the-vietnam-defense-v0-h1ay0oteum4a1.png" alt="">
+        <div class="img-profile">
+            <img src="assets/image/z4663151747241_66bec72515c157d8c4c051812c4dd292.jpg" alt="">
+        </div>
+        <div class="name">
+    
+            <h1>Tran Thanh Hai</h1>
+            <h4>"Nothing Is Impossible"</h4>
+        </div>
+    
+        <div class="block-info_product">
+            Hello everyone, my name is Hai. I am a person who is learning basic Frontend HTML, CSS, JS. This is my first product based on what I learned from F8 and improved further. Please give your comments and help. I'll talk about it. Thank you!
+        </div>
+    </div>
+    <div id="screen-for_pc">
+        <!-- Change class to playing to play music -->
+        <div id="Main-screen" class="nonePlay">
+            <!-- Header-item -->
+            <header class="Main-screen-header">
+                <ul class="header-item">
+                    <li class="header-item_select"> <i class="fa-solid fa-list"></i></li>
+    
+                    <li class="header-item_text"> NOW PLAYING</li>
+                    <div class="volume">
+                        <i class="fa-solid fa-volume-xmark volume-min"></i>
+                        <input class="volumeProgress" type="range" value="100" min="0" max="50">
+                        <i class="fa-solid fa-volume-high volume-max"></i>
+                    </div>
+                </ul>
+                <h4>Ten bai hat</h4>
+            </header>
+    
+    
+    
+    
+            <div class="cd">
+    
+    
+    
+                <div class="cd-thumb" style="background-image: url(assets/image/noi\ tinh\ yeu\ bat\ dau.jpg);">
+                </div>
+    
+            </div>
+    
+    
+            <!-- //done -->
+    
+            <div class="control">
+                <!-- Add class 'active' to change status of the icon -->
+    
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+    
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-play btn-pause-background">
+                    <i class="icon-play fa-solid fa-play"></i>
+                    <i class="icon-pause fa-solid fa-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <!-- Add class 'active' to change status of the icon -->
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+    
+            </div>
+    
+    
+    
+    
+            <input id="progress" type="range" value='0' class="progress" step="1" min="0" max="100">
+    
+            <audio id="audio" class="audio" src=""></audio>
+    
+            <!-- //done -->
+    
+    
+        </div>
+    
+    
+        <div class="playlist">
+    
+        </div>
+    
+    
+    
+    
+    </div>
+    <div class="footer">
+        <div class="home-icon">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="home-profile">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    <div id="Main-profile">
+    
+    </div>
+    </div>
+</div>
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
